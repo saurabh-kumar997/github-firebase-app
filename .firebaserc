@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "github-searcher-app": {
+      "hosting": {
+        "github-firebase-app": [
+          "github-searcher-app"
+        ]
+      }
+    }
+  }
+}

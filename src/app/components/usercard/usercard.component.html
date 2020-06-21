@@ -1,0 +1,15 @@
+<div class="card">
+    <div class="card-body text-center">
+        <img [src]="user.avatar_url" alt=""
+            class="img-fluid img-thumbnail rounded-circle profile-pic border-2 border-white">
+    </div>
+
+    <div class="card-body">
+        <h4 class="card-title text-primary">
+            {{user.name}}
+        </h4>
+        <p *ngIf="user.bio" class="card-text">Bio: {{user.bio}}</p>
+        <p *ngIf="user.company" class="card-text">Company: {{user.company}}</p>
+        <p *ngIf="user.blog" class="card-text">Blog: <a [href]="user.blog" target="_blank">{{user.blog}}</a></p>
+    </div>
+</div>
